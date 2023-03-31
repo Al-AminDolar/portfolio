@@ -40,6 +40,7 @@ const Navbar = () => {
             I use animation as a third dimension by which to simplify
             experiences and kuiding thro each and every interaction. I’m not
             adding motion just to spruce things up, but doing it in ways that.
+            Allah Hafez
           </div>
 
           <div className="text-start flex justify-between items-center bg-[#222f43]  rounded-2xl py-3 px-4 border border-cyan-400  hover:shadow-xl  hover:shadow-sky-800 ">
