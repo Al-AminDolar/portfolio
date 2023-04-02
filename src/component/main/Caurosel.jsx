@@ -1,15 +1,23 @@
 import React from "react";
 import { BiLeftArrowAlt } from "react-icons/bi";
 import { BiRightArrowAlt } from "react-icons/bi";
+import Slider from "react-slick";
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+};
 const Caurosel = () => {
   return (
     <div className=" flex justify-center pb-44">
-      <div className="bg-[blueGray-800] h-[240px] w-[900px] border border-gray-700  rounded-md shadow-sm p-5 grid grid-cols-5">
+      <div className="bg-[#131c31] h-[240px] w-[900px] border border-gray-800  rounded-md shadow-sm p-5 grid grid-cols-5">
         <div className="col-span-1 space-y-3">
-          <p className="text-[#b6dcef] text-xl font-sans font-semibold">
+          <p className="text-[#b9e0f2] text-xl font-sans font-bold">
             Hot Topics
           </p>
-          <p className="text-gray-400 font-semibold text-sm w-2/3">
+          <p className="text-[#b9e0f2] font-semibold text-sm w-2/3">
             Don't miss out on the latest news about Travel tips, Hotels review,
             Food guide...
           </p>
@@ -23,11 +31,20 @@ const Caurosel = () => {
             </span>
           </div>
         </div>
-        <div className="col-span-4 text-slate-50">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt earum
-          nemo similique laboriosam, unde sed labore, cumque nostrum fugit
-          reprehenderit consequuntur facere explicabo a sit necessitatibus
-          perferendis, libero voluptate tempora.
+        <div className="col-span-4 ">
+          <Slider {...settings} className="">
+            <div className="h-300 w-300  bg-red-600 p-10 text-black">
+              <h3>Dolar</h3>
+            </div>
+
+            <div className="h-300 w-300 bg-slate-500 p-10 text-black">
+              <h3>ddddddd</h3>
+            </div>
+
+            <div className="h-300 w-300 bg-green-500 p-10 text-black">
+              <h3>ssss3</h3>
+            </div>
+          </Slider>
         </div>
       </div>
     </div>
