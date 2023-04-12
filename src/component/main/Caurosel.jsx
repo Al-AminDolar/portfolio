@@ -21,12 +21,12 @@ const Caurosel = () => {
   const settings = {
     dots: true,
     infinite: true,
-    autoplay: true,
-    speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3,
-    prevArrow: <CustomPrevArrow />,
-    nextArrow: <CustomNextArrow />,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 400,
+    cssEase: "linear",
   };
   return (
     <div className=" flex justify-center pb-44">
@@ -49,9 +49,9 @@ const Caurosel = () => {
             </span>
           </div>
         </div>
-        <div className="col-span-4 p-10  bg-white rounded ">
+        <div className="col-span-4  ">
           <Slider {...settings}>
-            {popularProducts?.slice(0, 3).map((data, i) => {
+            {popularProducts?.slice(0, 4).map((data, i) => {
               return (
                 <div className=" pt-2" key={i}>
                   <div className="flex  flex-col justify-center item-center text-center cursor-pointer  mx-[5%] ">
@@ -60,7 +60,7 @@ const Caurosel = () => {
                       alt=""
                       className="hover:outline outline-2 outline-[rgb(13,173,230)] rounded-lg h-[80%] w-[80%]"
                     />
-                    <h3 className="text-sm h-[80%] w-[80%]  text-black">
+                    <h3 className="text-lg h-[80%] w-[80%]  font-mono font-semibold text-white">
                       {data?.title}
                     </h3>
                   </div>
