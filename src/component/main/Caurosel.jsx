@@ -21,6 +21,7 @@ const Caurosel = () => {
   const settings = {
     dots: true,
     infinite: true,
+    autoplay: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -29,7 +30,7 @@ const Caurosel = () => {
   };
   return (
     <div className=" flex justify-center pb-44">
-      <div className="bg-[#131c31] h-[240px] w-[900px] border border-gray-800  rounded-md shadow-sm p-5 grid grid-cols-5">
+      <div className="bg-[#131c31]  w-[900px] border border-gray-800  rounded-md shadow-sm p-5 grid grid-cols-5">
         <div className="col-span-1 space-y-3">
           <p className="text-[#b9e0f2] text-xl font-sans font-bold">
             Hot Topics
@@ -48,11 +49,11 @@ const Caurosel = () => {
             </span>
           </div>
         </div>
-        <div className="col-span-4  p-10 bg-white rounded ">
+        <div className="col-span-4 p-10  bg-white rounded ">
           <Slider {...settings}>
             {popularProducts?.slice(0, 3).map((data, i) => {
               return (
-                <div className=" " key={i}>
+                <div className=" pt-2" key={i}>
                   <div className="flex  flex-col justify-center item-center text-center cursor-pointer  mx-[5%] ">
                     <img
                       src={data?.img}
