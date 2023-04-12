@@ -7,16 +7,6 @@ import "slick-carousel/slick/slick-theme.css";
 import data from "../dummy/dummyProducts.json";
 
 const Caurosel = () => {
-  const CustomPrevArrow = ({ onClick }) => (
-    <button className="custom-prev-arrow bg-white">Prev</button>
-  );
-
-  const CustomNextArrow = ({ onClick }) => (
-    <button className="custom-next-arrow bg-white" onClick={onClick}>
-      Next
-    </button>
-  );
-
   const { popularProducts } = data;
   const settings = {
     dots: true,
@@ -25,8 +15,7 @@ const Caurosel = () => {
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
-    autoplaySpeed: 400,
-    cssEase: "linear",
+    autoplaySpeed: 100,
   };
   return (
     <div className=" flex justify-center pb-44">
@@ -49,16 +38,16 @@ const Caurosel = () => {
             </span>
           </div>
         </div>
-        <div className="col-span-4  ">
+        <div className="col-span-4 pr-2">
           <Slider {...settings}>
             {popularProducts?.slice(0, 4).map((data, i) => {
               return (
-                <div className=" pt-2" key={i}>
+                <div className="" key={i}>
                   <div className="flex  flex-col justify-center item-center text-center cursor-pointer  mx-[5%] ">
                     <img
                       src={data?.img}
                       alt=""
-                      className="hover:outline outline-2 outline-[rgb(13,173,230)] rounded-lg h-[80%] w-[80%]"
+                      className="hover:outline outline-2 m-1 outline-[rgb(13,173,230)] rounded-lg h-[80%] w-[80%]"
                     />
                     <h3 className="text-lg h-[80%] w-[80%]  font-mono font-semibold text-white">
                       {data?.title}
