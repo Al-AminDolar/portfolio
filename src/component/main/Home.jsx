@@ -7,9 +7,9 @@ const Home = () => {
         <p className="text-sm font-sans font-semibold text-gray-400">
           Hello Everyone!
         </p>
-        <h1 className="text-6xl text-[rgb(13,173,230)] font-mono font-bold">
-          <span className="text-white">I'm</span> Al
-          <spanc className="text-white">-</spanc>Amin Dolar
+        <h1 className="text-6xl text-[rgb(13,173,230)]  font-bold ">
+          <span className="text-white font-sans">I'm</span> Al
+          <spanc className="text-white font-serif">-</spanc>Amin Dolar
         </h1>
         <span className="text-sm">
           A Software engineer & professional web developer
