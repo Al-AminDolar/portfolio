@@ -3,7 +3,7 @@ import ArticleCart from "./ArticleCart";
 
 const Blogs = () => {
   return (
-    <div className=" px-56  ">
+    <div className=" px-56  py-16  ">
       <div className="my-16">
         <h1 className="text-[#0db3e2] text-6xl font-semibold">
           Editors Picked
@@ -13,8 +13,10 @@ const Blogs = () => {
         </h4>
       </div>
 
-      <div>
-        <ArticleCart />
+      <div className="flex justify-between">
+        {[1, 2].map((data) => {
+          return <ArticleCart key={data} />;
+        })}
       </div>
     </div>
   );
