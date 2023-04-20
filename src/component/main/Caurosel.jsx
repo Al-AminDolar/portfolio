@@ -19,7 +19,7 @@ const Caurosel = () => {
   };
   return (
     <div className=" flex justify-center ">
-      <div className="bg-[#131c31]  w-[900px] border border-gray-800  rounded-md shadow-sm p-5 grid grid-cols-5">
+      <div className="bg-[#17213b]   w-[900px] border border-gray-800  rounded-md shadow-sm p-5 grid grid-cols-5">
         <div className="col-span-1 space-y-3">
           <p className="text-[#b9e0f2] text-xl font-sans font-bold">
             Hot Topics

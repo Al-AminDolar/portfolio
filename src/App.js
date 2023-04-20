@@ -3,6 +3,7 @@ import Navbar from "./component/nav/Navbar.jsx";
 import Caurosel from "./component/main/Caurosel";
 import Main_page from "./component/main/Main_page";
 import Blogs from "./component/main/Blogs";
+import Footer from "./component/main/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
 
       <Caurosel />
       <Blogs />
+      <Footer />
     </div>
   );
 }

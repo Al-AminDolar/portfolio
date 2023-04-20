@@ -13,10 +13,18 @@ const Blogs = () => {
         </h4>
       </div>
 
-      <div className="flex justify-between">
-        {[1, 2].map((data) => {
-          return <ArticleCart key={data} />;
-        })}
+      <div className="space-y-10">
+        <div className="flex justify-between">
+          {[1, 2].map((data) => {
+            return <ArticleCart key={data} />;
+          })}
+        </div>
+
+        <div className="flex gap-5">
+          {[1, 2, 3].map((item) => {
+            return <ArticleCart key={item} />;
+          })}
+        </div>
       </div>
     </div>
   );
