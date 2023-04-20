@@ -5,7 +5,7 @@ const ArticleCart = () => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
-      className={` w-[420px] border border-gray-800   rounded-md shadow-md p-5 space-y-5  bg-[#17213b]  ${
+      className={` w-[420px] border border-gray-800   rounded-md shadow-md p-5 space-y-5  bg-[#131c31]  ${
         isHovered
           ? "transition    ease-in-out duration-500 -translate-y-1 "
           : "transition    ease-in-out duration-500 translate-y-1 "
