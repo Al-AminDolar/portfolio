@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import data from "../dummy/dummyProducts.json";
 
 const Caurosel = () => {
-  const { popularProducts } = data;
+  const { cauroselProducts } = data;
   const settings = {
     dots: true,
     infinite: true,
@@ -38,9 +38,9 @@ const Caurosel = () => {
             </span>
           </div>
         </div>
-        <div className="col-span-4 pr-2">
+        <div className="col-span-4 pr-5 pt-10 ">
           <Slider {...settings}>
-            {popularProducts?.slice(0, 4).map((data, i) => {
+            {cauroselProducts?.slice(0, 4).map((data, i) => {
               return (
                 <div className="" key={i}>
                   <div className="flex  flex-col justify-center item-center text-center cursor-pointer  mx-[5%] ">

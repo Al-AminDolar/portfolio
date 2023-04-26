@@ -3,7 +3,7 @@ import ArticleCart from "./ArticleCart";
 
 const Blogs = () => {
   return (
-    <div className=" px-56  py-16  ">
+    <div className=" px-96  py-16  ">
       <div className="my-16">
         <h1 className="text-[#0db3e2] text-6xl font-semibold">
           Editors Picked
@@ -14,13 +14,13 @@ const Blogs = () => {
       </div>
 
       <div className="space-y-10">
-        <div className="flex justify-between">
+        <div className="flex justify-center gap-8 ">
           {[1, 2].map((data) => {
             return <ArticleCart key={data} />;
           })}
         </div>
 
-        <div className="flex gap-5">
+        <div className="flex justify-center gap-8">
           {[1, 2, 3].map((item) => {
             return <ArticleCart key={item} />;
           })}

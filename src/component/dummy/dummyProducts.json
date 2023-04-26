@@ -1,59 +1,35 @@
 {
-  "popularProducts": [
+  "cauroselProducts": [
     {
       "_id": 1,
-      "img": "https://i.ibb.co/2Sr3Nx3/vapepens.png",
-      "title": "Vape Pens",
-      "searchKey": "vape-pens"
+      "img": "https://i.ibb.co/FK5QFD3/React.jpg",
+      "title": "React Js"  
     },
     {
       "_id": 2,
-      "img": "https://i.ibb.co/YtGYKRG/flower.png",
-      "title": "Flower",
-      "searchKey": "flower"
+      "img": "https://i.ibb.co/P1fQr1v/shopify-2-1210x617.png",
+      "title": "Node Js"
     },
     {
       "_id": 3,
-      "img": "https://i.ibb.co/3BnR5vy/Concentrates.png",
-      "title": "Concentrates",
-      "searchKey": "concentrates"
+      "img": "https://i.ibb.co/2qXzDBQ/mongodb.png",
+      "title": "Mongo Db"
     },
     {
       "_id": 4,
-      "img": "https://i.ibb.co/V9CnTz5/Pre-roll.png",
-      "title": "Pre roll",
-      "searchKey": "pre-roll"
+      "img": "https://i.ibb.co/bHqzpPt/Java-Script.png",
+      "title": "JavaScript"
     },
     {
       "_id": 5,
-      "img": "https://i.ibb.co/6DCyVLL/Cbd.png",
-      "title": "CBD",
-      "searchKey": "cbd"
-    },
-    {
-      "_id": 6,
-      "img": "https://i.ibb.co/CPMghCH/topicals.png",
-      "title": "Topicals",
-      "searchKey": "topicals"
-    },
-    {
-      "_id": 7,
-      "img": "https://i.ibb.co/V9CnTz5/Pre-roll.png",
-      "title": "Topicals",
-      "searchKey": "topicals"
-    },
-    {
-      "_id": 8,
-      "img": "https://i.ibb.co/YtGYKRG/flower.png",
-      "title": "Pre roll",
-      "searchKey": "pre-roll"
-    },
-    {
-      "_id": 9,
-      "img": "https://i.ibb.co/3BnR5vy/Concentrates.png",
-      "title": "CBD",
-      "searchKey": "cbd"
+      "img": "https://i.ibb.co/Fh565k0/web-development1.png",
+      "title": "Web Development"
+     
     }
+  
+  
+    
+    
   ],
 
   "featuresProducts": [
