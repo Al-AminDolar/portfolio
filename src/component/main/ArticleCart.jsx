@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { GiAlarmClock } from "react-icons/gi";
 import img from "../Images/node.png";
-const ArticleCart = () => {
+const ArticleCart = ({ data }) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
@@ -13,9 +13,7 @@ const ArticleCart = () => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div>
-        <img src={img} alt="" className=" rounded-md" />
-      </div>
+      <img src={data?.img} alt="" className=" rounded-md " />
 
       <div className="flex justify-between text-gray-500">
         <p>#backend#node</p>
@@ -25,12 +23,12 @@ const ArticleCart = () => {
       <h1
         className={` text-${
           isHovered ? "sky-500" : "white"
-        }  text-4xl font-semibold`}
+        }  text-3xl font-semibold`}
         style={{
           transition: "color 0.3s ease-in-out",
         }}
       >
-        Node Js For Beginners
+        {data?.heading}
       </h1>
 
       <div className="flex justify-between items-center text-gray-500">

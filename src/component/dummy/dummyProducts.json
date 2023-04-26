@@ -2,28 +2,34 @@
   "cauroselProducts": [
     {
       "_id": 1,
-      "img": "https://i.ibb.co/FK5QFD3/React.jpg",
-      "title": "React Js"  
+      "img": "https://i.ibb.co/4MnF6Lc/resize-168249692544751221-React.jpg",
+      "title": "React Js"  ,
+      "heading":"React Js For Beginner"
     },
     {
       "_id": 2,
-      "img": "https://i.ibb.co/P1fQr1v/shopify-2-1210x617.png",
-      "title": "Node Js"
+      "img": "https://i.ibb.co/982skrm/resize-16824969001858769184shopify21210x617.png",
+      "title": "Node Js",
+      "heading":"Node Js For Beginner"
     },
     {
       "_id": 3,
-      "img": "https://i.ibb.co/2qXzDBQ/mongodb.png",
-      "title": "Mongo Db"
+      "img": "https://i.ibb.co/CPsLXTr/resize-16824968441624835110mongodb.png",
+      "title": "Mongo Db",
+      "heading":"Mongo Db For Beginner"
     },
     {
       "_id": 4,
-      "img": "https://i.ibb.co/bHqzpPt/Java-Script.png",
-      "title": "JavaScript"
+      "img": "https://i.ibb.co/bFWyQmB/resize-16824968721640148426-Java-Script.png",
+      "title": "JavaScript",
+      "heading":"JavaScript  Beginner to advanched"
     },
     {
       "_id": 5,
-      "img": "https://i.ibb.co/Fh565k0/web-development1.png",
-      "title": "Web Development"
+      "img": "https://i.ibb.co/k16pV3p/resize-16824969401564700778webdevelopment1.png",
+      "title": "Web Development",
+       "heading":"Web Development For Beginner"
+
      
     }
   

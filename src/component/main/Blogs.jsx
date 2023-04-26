@@ -1,7 +1,10 @@
 import React from "react";
 import ArticleCart from "./ArticleCart";
 
+import dummyData from "../dummy/dummyProducts.json";
+
 const Blogs = () => {
+  const { cauroselProducts } = dummyData;
   return (
     <div className=" px-96  py-16  ">
       <div className="my-16">
@@ -15,14 +18,14 @@ const Blogs = () => {
 
       <div className="space-y-10">
         <div className="flex justify-center gap-8 ">
-          {[1, 2].map((data) => {
-            return <ArticleCart key={data} />;
+          {cauroselProducts.slice(0, 2).map((data, i) => {
+            return <ArticleCart data={data} key={i} />;
           })}
         </div>
 
         <div className="flex justify-center gap-8">
-          {[1, 2, 3].map((item) => {
-            return <ArticleCart key={item} />;
+          {cauroselProducts.slice(2).map((data, i) => {
+            return <ArticleCart data={data} key={i} />;
           })}
         </div>
       </div>
