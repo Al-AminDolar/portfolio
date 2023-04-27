@@ -3,11 +3,11 @@ import Image from "../Images/IMG20221015142448-removebg-preview.png";
 const Main_page = () => {
   return (
     <div className="flex justify-between  ">
-      <div className=" text-white     space-y-5  w-1/3 mb-10 p-10">
+      <div className=" text-white space-y-5  mb-10 w-[440px] self-end">
         <p className="text-sm font-sans font-semibold text-gray-400">
           Hello Everyone!
         </p>
-        <h1 className="text-6xl text-[rgb(13,173,230)] font-mono font-bold">
+        <h1 className="text-7xl text-[rgb(13,173,230)] font-mono font-bold">
           <span className="text-white">I'm</span> Al
           <spanc className="text-white">-</spanc>Amin Dolar
         </h1>
@@ -33,7 +33,7 @@ const Main_page = () => {
         </div>
       </div>
 
-      <div className=" ">
+      <div className="pr-10 ">
         <img src={Image} alt="" className="w-[300px]" />
       </div>
     </div>

@@ -7,10 +7,10 @@ import { BsYoutube } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="px-40 pb-5 ">
+    <div className=" pb-5  px-72">
       <div className="border border-gray-800 rounded-[50px] p-20 bg-[#131c31]  ">
         <div className="grid grid-cols-3 gap-10 border-b pb-20">
-          <div className="space-y-8">
+          <div className="space-y-8 p-10">
             <h4 className="text-[#d8e6fb] text-4xl font-bold">S.T.P</h4>
             <p className="text-[#94a9c9] text-justify">
               Thank you so much for visiting my site. I am always trying to give
@@ -24,10 +24,10 @@ const Footer = () => {
               <p className="text-[#94a9c9] text-base">Tallbag Road 93No Home</p>
             </div>
           </div>
-          <div className="space-y-8">
+          <div className="space-y-8 p-10">
             <h6 className="text-[#b9e0f2] font-semibold text-xl">Categories</h6>
             <div className="space-y-4 text-base">
-              <span className="flex justify-between text-[#94a9c9]">
+              <span className="flex justify-between text-[#94a9c9] ">
                 <p>Frontend</p>
                 <p>Backend</p>
               </span>
@@ -53,7 +53,7 @@ const Footer = () => {
               </span>
             </div>
           </div>
-          <div className="space-y-8">
+          <div className="space-y-8 p-10">
             <h6 className="text-[#b9e0f2] font-semibold text-xl">Newsletter</h6>
             <p className="text-[#94a9c9] text-justify text-base">
               Sign up to be first to receive the latest stories inspiring us,
