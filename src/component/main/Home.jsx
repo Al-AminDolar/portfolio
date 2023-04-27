@@ -2,10 +2,10 @@ import React from "react";
 import Image from "../Images/IMG20221015142448-removebg-preview.png";
 const Home = () => {
   return (
-    <div className="flex justify-center space-x-32">
-      <div className="bg-blueGray-900 text-white   shadow-lg rounded-sm text-start self-end  space-y-5  w-1/3 mb-10 p-10">
+    <div className="flex justify-center">
+      <div className=" text-white   shadow-lg rounded-sm text-start self-end  space-y-5  w-1/3 mb-10 p-10">
         <p className="text-sm font-sans font-semibold text-gray-400">
-          Hello Everyone!
+          Hello Everyone!sss
         </p>
         <h1 className="text-6xl text-[rgb(13,173,230)]  font-bold ">
           <span className="text-white font-sans">I'm</span> Al

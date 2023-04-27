@@ -6,7 +6,7 @@ import dummyData from "../dummy/dummyProducts.json";
 const Blogs = () => {
   const { cauroselProducts } = dummyData;
   return (
-    <div className=" px-96  py-16  ">
+    <div className="   py-16  ">
       <div className="my-16">
         <h1 className="text-[#0db3e2] text-6xl font-semibold">
           Editors Picked

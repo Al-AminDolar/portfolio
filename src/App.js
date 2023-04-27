@@ -7,12 +7,14 @@ import Footer from "./component/main/Footer";
 
 function App() {
   return (
-    <div className="bg-blueGray-900">
+    <div className="bg-blueGray-900  ">
       <Navbar />
-      <Main_page />
+      <div className="px-96">
+        <Main_page />
 
-      <Caurosel />
-      <Blogs />
+        <Caurosel />
+        <Blogs />
+      </div>
       <Footer />
     </div>
   );
