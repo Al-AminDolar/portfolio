@@ -7,7 +7,7 @@ import { BsYoutube } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className=" pb-5  px-72">
+    <div className=" pb-5  ">
       <div className="border border-gray-800 rounded-[50px] p-20 bg-[#131c31]  ">
         <div className="grid grid-cols-3 gap-10 border-b pb-20">
           <div className="space-y-8 p-10">
