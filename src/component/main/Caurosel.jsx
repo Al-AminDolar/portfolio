@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { BiLeftArrowAlt } from "react-icons/bi";
 import { BiRightArrowAlt } from "react-icons/bi";
 import Slider from "react-slick";
@@ -7,6 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import data from "../dummy/dummyProducts.json";
 
 const Caurosel = () => {
+  const SliderRef = useRef(null);
+  console.log(SliderRef.current);
   const { cauroselProducts } = data;
   const settings = {
     dots: true,
@@ -14,8 +16,8 @@ const Caurosel = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 100,
+    speed: 600,
+    autoplaySpeed: 3000,
   };
   return (
     <div className=" flex justify-center ">
@@ -31,15 +33,21 @@ const Caurosel = () => {
 
           <div className="text-gray-200 flex gap-3 ">
             <span className="p-1 border border-gray-600 rounded-full bg-[#1d222e] hover:bg-[#0dcaf0] cursor-pointer ">
-              <BiLeftArrowAlt size={20} />
+              <BiLeftArrowAlt
+                size={20}
+                onClick={() => SliderRef.current.slickPrev()}
+              />
             </span>
             <span className="p-1 border border-gray-600 rounded-full bg-[#1d222e] hover:bg-[#0dcaf0] cursor-pointer">
-              <BiRightArrowAlt size={20} />
+              <BiRightArrowAlt
+                size={20}
+                onClick={() => SliderRef.current.slickNext()}
+              />
             </span>
           </div>
         </div>
         <div className="col-span-4 pr-5 pt-10 ">
-          <Slider {...settings}>
+          <Slider ref={SliderRef} {...settings}>
             {cauroselProducts?.slice(0, 4).map((data, i) => {
               return (
                 <div className="" key={i}>
