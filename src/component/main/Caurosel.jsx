@@ -18,6 +18,7 @@ const Caurosel = () => {
     autoplay: true,
     speed: 600,
     autoplaySpeed: 3000,
+    arrows: false,
   };
   return (
     <div className=" flex justify-center ">
