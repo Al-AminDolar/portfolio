@@ -15,6 +15,7 @@ const Navbar = () => {
             <ol className="hover:text-sky-500  cursor-pointer">Project</ol>
             <ol className="hover:text-sky-500  cursor-pointer">Blog</ol>
             <ol className="hover:text-sky-500  cursor-pointer">About</ol>
+            <ol className="hover:text-sky-500  cursor-pointer">Portfolio</ol>
           </ui>
         </div>
 
